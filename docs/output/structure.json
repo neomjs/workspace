@@ -245,7 +245,7 @@
         "collapsed": false,
         "id": 170,
         "isLeaf": false,
-        "name": "mixins",
+        "name": "mixin",
         "path": "worker",
         "parentId": 164,
         "singleton": false,
@@ -434,7 +434,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/ApiTreeList.mjs"
+        "srcPath": "docs/app/view/ApiTreeList.mjs"
     },
     {
         "className": "Neo.worker.App",
@@ -885,7 +885,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/ContentTabContainer.mjs"
+        "srcPath": "docs/app/view/ContentTabContainer.mjs"
     },
     {
         "className": "Neo.form.field.trigger.CopyToClipboard",
@@ -1061,7 +1061,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/ExamplesTreeList.mjs"
+        "srcPath": "docs/app/view/ExamplesTreeList.mjs"
     },
     {
         "className": "Neo.data.field.Field",
@@ -1215,7 +1215,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/HeaderComponent.mjs"
+        "srcPath": "docs/app/view/classdetails/HeaderComponent.mjs"
     },
     {
         "className": "Docs.app.view.HeaderContainer",
@@ -1226,7 +1226,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/HeaderContainer.mjs"
+        "srcPath": "docs/app/view/HeaderContainer.mjs"
     },
     {
         "className": "Neo.component.Helix",
@@ -1270,7 +1270,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/HierarchyTreeList.mjs"
+        "srcPath": "docs/app/view/classdetails/HierarchyTreeList.mjs"
     },
     {
         "className": "Neo.main.addon.HighlightJS",
@@ -1391,7 +1391,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/MainContainer.mjs"
+        "srcPath": "docs/app/view/classdetails/MainContainer.mjs"
     },
     {
         "className": "Docs.app.view.MainContainer",
@@ -1402,7 +1402,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/MainContainer.mjs"
+        "srcPath": "docs/app/view/MainContainer.mjs"
     },
     {
         "className": "MyApp.view.MainContainer",
@@ -1413,7 +1413,7 @@
         "path": ".view",
         "parentId": 192,
         "singleton": false,
-        "srcPath": "workspace/apps/myapp/view/MainContainer.mjs"
+        "srcPath": "apps/myapp/view/MainContainer.mjs"
     },
     {
         "className": "Docs.app.view.classdetails.MainContainerController",
@@ -1424,7 +1424,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/MainContainerController.mjs"
+        "srcPath": "docs/app/view/classdetails/MainContainerController.mjs"
     },
     {
         "className": "Docs.app.view.MainContainerController",
@@ -1435,7 +1435,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/MainContainerController.mjs"
+        "srcPath": "docs/app/view/MainContainerController.mjs"
     },
     {
         "className": "Neo.worker.Manager",
@@ -1501,7 +1501,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/MembersList.mjs"
+        "srcPath": "docs/app/view/classdetails/MembersList.mjs"
     },
     {
         "className": "Neo.worker.Message",
@@ -1669,15 +1669,15 @@
         "srcPath": "node_modules/neo.mjs/src/data/RecordFactory.mjs"
     },
     {
-        "className": "Neo.worker.mixins.RemoteMethodAccess",
+        "className": "Neo.worker.mixin.RemoteMethodAccess",
         "collapsed": false,
         "id": 171,
         "isLeaf": true,
         "name": "RemoteMethodAccess",
-        "path": "worker.mixins",
+        "path": "worker.mixin",
         "parentId": 170,
         "singleton": false,
-        "srcPath": "node_modules/neo.mjs/src/worker/mixins/RemoteMethodAccess.mjs"
+        "srcPath": "node_modules/neo.mjs/src/worker/mixin/RemoteMethodAccess.mjs"
     },
     {
         "className": "Neo.selection.table.RowModel",
@@ -1754,7 +1754,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/SourceViewComponent.mjs"
+        "srcPath": "docs/app/view/classdetails/SourceViewComponent.mjs"
     },
     {
         "className": "Neo.form.field.trigger.SpinDown",
@@ -1974,7 +1974,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/classdetails/TutorialComponent.mjs"
+        "srcPath": "docs/app/view/classdetails/TutorialComponent.mjs"
     },
     {
         "className": "Docs.app.view.TutorialsTreeList",
@@ -1985,7 +1985,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "workspace/docs/app/view/TutorialsTreeList.mjs"
+        "srcPath": "docs/app/view/TutorialsTreeList.mjs"
     },
     {
         "className": "Neo.core.Util",
