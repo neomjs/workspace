@@ -1,0 +1,477 @@
+{
+    "classData": [
+        {
+            "comment": "/**\n * The App worker contains most parts of the framework as well as all apps which get created.\n * See the tutorials for further infos.\n * @class Neo.worker.App\n * @extends Neo.worker.Base\n * @singleton\n */",
+            "meta": {
+                "filename": "App.mjs",
+                "lineno": 9,
+                "columnno": 0,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {}
+            },
+            "description": "The App worker contains most parts of the framework as well as all apps which get created.<br />See the tutorials for further infos.",
+            "kind": "class",
+            "name": "App",
+            "augments": [
+                "Neo.worker.Base"
+            ],
+            "tags": [
+                {
+                    "originalTitle": "singleton",
+                    "title": "singleton",
+                    "text": ""
+                }
+            ],
+            "memberof": "Neo.worker",
+            "longname": "Neo.worker.App",
+            "scope": "static",
+            "$longname": "Neo.worker.App",
+            "$kind": "class",
+            "id": 2704,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n         * @member {String} className='Neo.worker.App'\n         * @protected\n         */",
+            "meta": {
+                "filename": "App.mjs",
+                "lineno": 22,
+                "columnno": 8,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {}
+            },
+            "kind": "member",
+            "name": "className",
+            "type": {
+                "names": [
+                    "String"
+                ]
+            },
+            "defaultvalue": "'Neo.worker.App'",
+            "access": "protected",
+            "longname": "className",
+            "scope": "global",
+            "$longname": "className",
+            "$kind": "property",
+            "id": 2705,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n         * @member {String} ntype='app-worker'\n         * @protected\n         */",
+            "meta": {
+                "filename": "App.mjs",
+                "lineno": 27,
+                "columnno": 8,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {}
+            },
+            "kind": "member",
+            "name": "ntype",
+            "type": {
+                "names": [
+                    "String"
+                ]
+            },
+            "defaultvalue": "'app-worker'",
+            "access": "protected",
+            "longname": "ntype",
+            "scope": "global",
+            "$longname": "ntype",
+            "$kind": "property",
+            "id": 2706,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n         * @member {Object|null} data=null\n         * @protected\n         */",
+            "meta": {
+                "filename": "App.mjs",
+                "lineno": 32,
+                "columnno": 8,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {}
+            },
+            "kind": "member",
+            "name": "data",
+            "type": {
+                "names": [
+                    "Object",
+                    "null"
+                ]
+            },
+            "defaultvalue": null,
+            "access": "protected",
+            "longname": "data",
+            "scope": "global",
+            "$longname": "data",
+            "$kind": "property",
+            "id": 2707,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n         * @member {Boolean} singleton=true\n         * @protected\n         */",
+            "meta": {
+                "filename": "App.mjs",
+                "lineno": 37,
+                "columnno": 8,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {}
+            },
+            "kind": "member",
+            "name": "singleton",
+            "type": {
+                "names": [
+                    "Boolean"
+                ]
+            },
+            "defaultvalue": true,
+            "access": "protected",
+            "longname": "singleton",
+            "scope": "global",
+            "$longname": "singleton",
+            "$kind": "property",
+            "id": 2708,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n         * @member {String} workerId='app'\n         * @protected\n         */",
+            "meta": {
+                "filename": "App.mjs",
+                "lineno": 42,
+                "columnno": 8,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {}
+            },
+            "kind": "member",
+            "name": "workerId",
+            "type": {
+                "names": [
+                    "String"
+                ]
+            },
+            "defaultvalue": "'app'",
+            "access": "protected",
+            "longname": "workerId",
+            "scope": "global",
+            "$longname": "workerId",
+            "$kind": "property",
+            "id": 2709,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     * Only needed for the SharedWorkers context\n     * @param {String} appName\n     * @param {String} eventName\n     */",
+            "meta": {
+                "range": [
+                    1367,
+                    1540
+                ],
+                "filename": "App.mjs",
+                "lineno": 50,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089430",
+                    "name": "App#fireMainViewsEvent",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "appName",
+                        "eventName"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "description": "Only needed for the SharedWorkers context",
+            "params": [
+                {
+                    "type": {
+                        "names": [
+                            "String"
+                        ]
+                    },
+                    "name": "appName"
+                },
+                {
+                    "type": {
+                        "names": [
+                            "String"
+                        ]
+                    },
+                    "name": "eventName"
+                }
+            ],
+            "name": "fireMainViewsEvent",
+            "longname": "App#fireMainViewsEvent",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "$longname": "App#fireMainViewsEvent",
+            "$kind": "method",
+            "id": 2710,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     *\n     * @param {String} path\n     * @returns {Promise}\n     */",
+            "meta": {
+                "range": [
+                    1623,
+                    1989
+                ],
+                "filename": "App.mjs",
+                "lineno": 61,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089461",
+                    "name": "App#importApp",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "path"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "params": [
+                {
+                    "type": {
+                        "names": [
+                            "String"
+                        ]
+                    },
+                    "name": "path"
+                }
+            ],
+            "returns": [
+                {
+                    "type": {
+                        "names": [
+                            "Promise"
+                        ]
+                    }
+                }
+            ],
+            "name": "importApp",
+            "longname": "App#importApp",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "$longname": "App#importApp",
+            "$kind": "method",
+            "id": 2711,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     * Only relevant for SharedWorkers\n     */",
+            "meta": {
+                "range": [
+                    2050,
+                    2171
+                ],
+                "filename": "App.mjs",
+                "lineno": 78,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089485",
+                    "name": "App#onDisconnect",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "data"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "description": "Only relevant for SharedWorkers",
+            "name": "onDisconnect",
+            "longname": "App#onDisconnect",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "params": [],
+            "$longname": "App#onDisconnect",
+            "$kind": "method",
+            "id": 2712,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     * Every dom event will get forwarded as a worker message from main and ends up here first\n     * @param {Object} data useful event properties, differs for different event types. See Neo.main.DomEvents.\n     */",
+            "meta": {
+                "range": [
+                    2400,
+                    2460
+                ],
+                "filename": "App.mjs",
+                "lineno": 87,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089505",
+                    "name": "App#onDomEvent",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "data"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "description": "Every dom event will get forwarded as a worker message from main and ends up here first",
+            "params": [
+                {
+                    "type": {
+                        "names": [
+                            "Object"
+                        ]
+                    },
+                    "description": "useful event properties, differs for different event types. See Neo.main.DomEvents.",
+                    "name": "data"
+                }
+            ],
+            "name": "onDomEvent",
+            "longname": "App#onDomEvent",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "$longname": "App#onDomEvent",
+            "$kind": "method",
+            "id": 2713,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     * Every URL hash-change will create a post message in main and end up here first.\n     * @param {Object} data parsed key-value pairs for each hash value\n     */",
+            "meta": {
+                "range": [
+                    2640,
+                    2703
+                ],
+                "filename": "App.mjs",
+                "lineno": 95,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089516",
+                    "name": "App#onHashChange",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "data"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "description": "Every URL hash-change will create a post message in main and end up here first.",
+            "params": [
+                {
+                    "type": {
+                        "names": [
+                            "Object"
+                        ]
+                    },
+                    "description": "parsed key-value pairs for each hash value",
+                    "name": "data"
+                }
+            ],
+            "name": "onHashChange",
+            "longname": "App#onHashChange",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "$longname": "App#onHashChange",
+            "$kind": "method",
+            "id": 2714,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     * The starting point for apps\n     * @param {Object} data\n     */",
+            "meta": {
+                "range": [
+                    2788,
+                    3425
+                ],
+                "filename": "App.mjs",
+                "lineno": 103,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089529",
+                    "name": "App#onLoadApplication",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "data"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "description": "The starting point for apps",
+            "params": [
+                {
+                    "type": {
+                        "names": [
+                            "Object"
+                        ]
+                    },
+                    "name": "data"
+                }
+            ],
+            "name": "onLoadApplication",
+            "longname": "App#onLoadApplication",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "$longname": "App#onLoadApplication",
+            "$kind": "method",
+            "id": 2715,
+            "neoClassName": "Neo.worker.App"
+        },
+        {
+            "comment": "/**\n     *\n     * @param {String} name\n     */",
+            "meta": {
+                "range": [
+                    3482,
+                    3562
+                ],
+                "filename": "App.mjs",
+                "lineno": 132,
+                "columnno": 4,
+                "path": "/Users/Shared/github/neomjs/workspace/node_modules/neo.mjs/src/worker",
+                "code": {
+                    "id": "astnode100089629",
+                    "name": "App#registerMainView",
+                    "type": "MethodDefinition",
+                    "paramnames": [
+                        "name"
+                    ]
+                },
+                "vars": {
+                    "": null
+                }
+            },
+            "params": [
+                {
+                    "type": {
+                        "names": [
+                            "String"
+                        ]
+                    },
+                    "name": "name"
+                }
+            ],
+            "name": "registerMainView",
+            "longname": "App#registerMainView",
+            "kind": "function",
+            "memberof": "App",
+            "scope": "instance",
+            "$longname": "App#registerMainView",
+            "$kind": "method",
+            "id": 2716,
+            "neoClassName": "Neo.worker.App"
+        }
+    ]
+}
