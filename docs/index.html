@@ -14,7 +14,10 @@
             appPath         : '../../docs/app.mjs',
             basePath        : '../',
             environment     : 'development',
-            mainThreadAddons: ['HighlightJS', 'Stylesheet']
+            isExperimental  : true,
+            resourcesPath   : '../node_modules/neo.mjs/resources/',
+            workerBasePath  : '../node_modules/neo.mjs/src/worker/',
+            mainThreadAddons: ['DragDrop', 'HighlightJS', 'Stylesheet']
         });
     </script>
 
