@@ -3,8 +3,6 @@
 package-lock.json
 
 # dependencies
-/dist
-/docs/output
 /node_modules
 
 # IDEs and editors
