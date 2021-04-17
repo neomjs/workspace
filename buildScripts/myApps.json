@@ -26,7 +26,8 @@
         "MyApp": {
             "input": "./apps/myapp/app.mjs",
             "output": "/apps/myapp/",
-            "title": "MyApp"
+            "title": "MyApp",
+            "mainThreadAddons": "'DragDrop', 'Stylesheet'"
         }
     }
 }

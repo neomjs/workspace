@@ -9,8 +9,6 @@ import Viewport     from '../../../node_modules/neo.mjs/src/container/Viewport.m
 class MainContainer extends Viewport {
     static getConfig() {return {
         className: 'MyApp.view.MainContainer',
-        ntype    : 'main-container',
-
         autoMount: true,
         layout   : {ntype: 'fit'},
 
