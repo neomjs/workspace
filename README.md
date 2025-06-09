@@ -1,7 +1,7 @@
 # neo.mjs workspace
 This repository contains the default output for <a href="https://github.com/neomjs/create-app">npx neo-app</a>.
 
-In case there are any issues with the npx script, feel free to fork this repository instead.
+In case there are any issues with the npx script, feel free to clone or fork this repository instead.
 A fork has the advantage that you can do an update in case the default output structure of npx neo-app should
 change at some point.
 
