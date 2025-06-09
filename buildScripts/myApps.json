@@ -14,6 +14,14 @@
             "input": "./src/worker/Data.mjs",
             "output": "dataworker.js"
         },
+        "service": {
+            "input": "./ServiceWorker.mjs",
+            "output": "serviceworker.js"
+        },
+        "task": {
+            "input": "./src/worker/Task.mjs",
+            "output": "taskworker.js"
+        },
         "vdom": {
             "input": "./src/worker/VDom.mjs",
             "output": "vdomworker.js"

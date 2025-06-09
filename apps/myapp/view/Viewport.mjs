@@ -1,22 +1,23 @@
+import BaseViewport from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
 import Component    from '../../../node_modules/neo.mjs/src/component/Base.mjs';
 import TabContainer from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
-import Viewport     from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
 
 /**
- * @class MyApp.view.MainContainer
+ * @class MyApp.view.Viewport
  * @extends Neo.container.Viewport
  */
-class MainContainer extends Viewport {
+class Viewport extends BaseViewport {
     static config = {
         /**
-         * @member {String} className='MyApp.view.MainContainer'
+         * @member {String} className='MyApp.view.Viewport'
          * @protected
          */
-        className: 'MyApp.view.MainContainer',
-        /**
-         * @member {Boolean} autoMount=true
+        className: 'MyApp.view.Viewport',
+        /*
+         * @member {Object} layout={ntype:'fit'}
          */
-        autoMount: true,
+        layout: {ntype: 'fit'},
+
         /**
          * @member {Object[]} items
          */
@@ -33,26 +34,20 @@ class MainContainer extends Viewport {
             },
 
             items: [{
-                tabButtonConfig: {
+                header: {
                     iconCls: 'fa fa-home',
                     text   : 'Tab 1'
                 },
                 vdom: {innerHTML: 'Welcome to your new Neo App.'}
             }, {
-                tabButtonConfig: {
+                header: {
                     iconCls: 'fa fa-play-circle',
                     text   : 'Tab 2'
                 },
                 vdom: {innerHTML: 'Have fun creating something awesome!'}
             }]
-        }],
-        /*
-         * @member {Object} layout={ntype:'fit'}
-         */
-        layout: {ntype: 'fit'}
+        }]
     }
 }
 
-Neo.applyClassConfig(MainContainer);
-
-export default MainContainer;
+export default Neo.setupClass(Viewport);

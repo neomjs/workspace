@@ -38,11 +38,11 @@ class MainContainerController extends Component {
             opts    = {appName, windowId: me.component.windowId};
 
         if (appName === 'Portal') {
-            opts.highlightJsPath = '../../docs/resources/highlight/highlight.pack.js';
-            opts.themePath       = '../../docs/resources/highlightjs-custom-github-theme.css'
+            opts.highlightJsPath = '../../docs/resources/lib/highlight/highlight.pack.js';
+            opts.themePath       = '../../docs/resources/lib/highlightjs-custom-github-theme.css'
         }
 
-        Neo.main.addon.HighlightJS.loadLibrary(opts)
+        Neo.main.addon.HighlightJS.loadFiles(opts)
     }
 
     /**
@@ -57,7 +57,7 @@ class MainContainerController extends Component {
             id           : record.className,
             structureData: record,
 
-            tabButtonConfig: {
+            header: {
                 iconCls: record.singleton ? 'fa fa-arrow-alt-circle-right' : 'fa fa-copyright',
                 text   : record.name
             }
@@ -74,16 +74,16 @@ class MainContainerController extends Component {
             pathArray           = [],
             store               = me.getReference('examples-treelist').store,
             tmpRecord           = record,
-            tabButtonConfig;
+            header;
 
         while (tmpRecord.parentId !== null) {
             tmpRecord = store.get(tmpRecord.parentId);
-            name      = tmpRecord.name + '.' + name;
+            name      = tmpRecord.name + '.' + name
         }
 
         name = 'examples_' + name;
 
-        tabButtonConfig = {
+        header = {
             iconCls: 'fa fa-desktop',
             text   : record.name
         };
@@ -94,14 +94,14 @@ class MainContainerController extends Component {
                 record.path).then((module) => {
                     contentTabContainer.add({
                         module: module.default,
-                        id    : name,
-                        tabButtonConfig
+                        header,
+                        id    : name
                     })
                 }
-            );
+            )
         } else {
             record.path.forEach(path => {
-                pathArray.push(import(/* webpackIgnore: true */ path));
+                pathArray.push(import(/* webpackIgnore: true */ path))
             });
 
             Promise.all(pathArray).then(function(modules) {
@@ -115,10 +115,10 @@ class MainContainerController extends Component {
 
                 contentTabContainer.add({
                     ntype: 'container',
+                    header,
                     id   : name,
                     items,
-                    style: {padding: '10px'},
-                    tabButtonConfig
+                    style: {padding: '10px'}
                 })
             })
         }
@@ -133,7 +133,7 @@ class MainContainerController extends Component {
 
         me.getReference('examples-treelist') .filter('name', value, null);
         me.getReference('api-treelist')      .filter('name', value, null);
-        me.getReference('tutorials-treelist').filter('name', value, null);
+        me.getReference('tutorials-treelist').filter('name', value, null)
     }
 
     /**
@@ -153,18 +153,18 @@ class MainContainerController extends Component {
 
         if (button.text === 'Source View Theme Light') {
             buttonText = 'Source View Theme Dark';
-            href       = './resources/highlightjs-custom-github-theme.css';
+            href       = './resources/lib/highlightjs-custom-github-theme.css'
         } else {
             buttonText = 'Source View Theme Light';
-            href       = './resources/highlightjs-custom-dark-theme.css';
+            href       = './resources/lib/highlightjs-custom-dark-theme.css'
         }
 
         Neo.main.addon.Stylesheet.swapStyleSheet({
-            appName: me.component.appName,
             href,
-            id     : 'hljs-theme'
+            id      : 'hljs-theme',
+            windowId: me.windowId,
         }).then(data => {
-            button.text = buttonText;
+            button.text = buttonText
         })
     }
 
@@ -179,10 +179,10 @@ class MainContainerController extends Component {
 
         if (button.text === 'Theme Light') {
             buttonText = 'Theme Dark';
-            theme      = 'neo-theme-light';
+            theme      = 'neo-theme-light'
         } else {
             buttonText = 'Theme Light';
-            theme      = 'neo-theme-dark';
+            theme      = 'neo-theme-dark'
         }
 
         cls = [...view.cls];
@@ -212,7 +212,7 @@ class MainContainerController extends Component {
             fileType: record.type,
             id      : record.name,
 
-            tabButtonConfig: {
+            header: {
                 iconCls: 'fa fa-hands-helping',
                 text   : record.name
             }
@@ -240,7 +240,7 @@ class MainContainerController extends Component {
                 line         : lineNumber,
                 structureData: record,
 
-                tabButtonConfig: {
+                header: {
                     iconCls: 'fa fa-code',
                     text   : record.name
                 }
@@ -253,6 +253,4 @@ class MainContainerController extends Component {
     }
 }
 
-Neo.setupClass(MainContainerController);
-
-export default MainContainerController;
+export default Neo.setupClass(MainContainerController);
